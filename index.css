@@ -1,0 +1,54 @@
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+body::before {
+  content: "";
+  background-image: url('img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.container {
+  padding: 20px;
+  margin: 20px;
+  border: 20px solid #70c4c4;
+  background: #ffffff;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #1b1d1d; /* Cambia el color de fondo al deseado, aquí se usa rojo (#ff0000) como ejemplo */
+  color: #ffffff; /* Cambia el color del texto al deseado, aquí se usa blanco (#ffffff) como ejemplo */
+  text-align: right; /* Centra el texto a la derecha */
+  font-size: 12px; /* Cambia el tamaño de fuente al deseado, aquí se usa 12px como ejemplo */
+  padding: 10px; /* Ajusta el espacio interno del botón alrededor del texto */
+  width: 70px;
+}
